@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "661030509932",
+    "firebase_url": "https://cabsy-e82ff-default-rtdb.firebaseio.com",
+    "project_id": "cabsy-e82ff",
+    "storage_bucket": "cabsy-e82ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661030509932:android:79cddd44734dee04d6e749",
+        "android_client_info": {
+          "package_name": "com.cabsy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661030509932-g8ae83sb073oe87asvlv18k7mqmkodp1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cabsy",
+            "certificate_hash": "a26928f8ed62849c0ce2b292583126a61764105c"
+          }
+        },
+        {
+          "client_id": "661030509932-gl2rgpj0f4rolpd91atk9ahv161brepu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkTnZlLZLp6o84g6VHcPIirDA_A3CPt18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661030509932-gl2rgpj0f4rolpd91atk9ahv161brepu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
