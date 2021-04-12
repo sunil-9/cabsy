@@ -28,7 +28,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name="firebase.cabsy.Home.HomeActivity">
+        <activity android:name="firebase.cabsy.Login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,7 +41,7 @@
             android:required="false" />
 
         <activity android:name="firebase.cabsy.Account.AccountActivity" />
-        <activity android:name="firebase.cabsy.Login.LoginActivity" />
+        <activity android:name="firebase.cabsy.Home.HomeActivity" />
         <activity android:name="firebase.cabsy.Login.RegisterActivity" />
         <activity android:name="firebase.cabsy.Rides.RidesActivity" />
         <activity android:name="firebase.cabsy.Home.OfferRideFragment" />
