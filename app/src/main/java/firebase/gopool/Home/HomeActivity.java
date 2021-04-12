@@ -522,7 +522,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         hideKeyboard(HomeActivity.this);
     }
 
-    private void geoDecoder(Location latLng){
+    private void geoDecoder(Location latLng) {
         Geocoder geocoder;
         List<Address> addresses = null;
         geocoder = new Geocoder(this, Locale.getDefault());
@@ -728,8 +728,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavViewBar);
         BottomNavigationViewHelper.enableNavigation(mContext, bottomNavigationView);
-        //BottomNavigationViewHelper.addBadge(mContext, bottomNavigationView);
-
 
         //Change current highlighted icon
         Menu menu = bottomNavigationView.getMenu();
@@ -813,7 +811,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
                     offerButton.setEnabled(false);
                     offerButton.setAlpha(.5f);
                     offerButton.setClickable(false);
-
                 }
             }
 

@@ -48,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:rating="5.0"
+                android:visibility="gone"
                 android:layout_alignParentLeft="true"
                 style="@style/customRatingBar"
                 android:progressTint="@color/ratingScale"
@@ -88,7 +89,7 @@
 
                     <ImageView
                         android:layout_width="30dp"
-                        android:src="@drawable/ic_work"
+                        android:src="@drawable/ic_house"
                         android:layout_height="30dp" />
 
                     <TextView
@@ -114,7 +115,7 @@
 
                     <ImageView
                         android:layout_width="30dp"
-                        android:src="@drawable/ic_education"
+                        android:src="@drawable/ic_phone"
                         android:layout_height="30dp" />
 
                     <TextView
@@ -163,12 +164,14 @@
                     android:layout_marginTop="20dp"
                     android:textColor="@color/darkgrey"
                     android:textStyle="bold"
+                    android:visibility="gone"
                     android:textSize="17dp"
                     android:text="Recent reviews"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:orientation="vertical"
+                    android:visibility="gone"
                     android:id="@+id/reviewLayout"
                     android:layout_below="@id/ListenToHeading"
                     android:layout_height="80dp">
