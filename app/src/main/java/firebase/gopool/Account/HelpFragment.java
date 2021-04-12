@@ -28,6 +28,9 @@ public class HelpFragment extends AppCompatActivity {
 
     private static final String TAG = "HelpFragment";
 
+
+    
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
