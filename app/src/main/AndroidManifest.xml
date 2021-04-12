@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="firebase.gopool">
+    package="firebase.cabsy">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".Common.ApplicationContext"
+        android:name="firebase.cabsy.Common.ApplicationContext"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Payment.PaymentActivity"
+            android:name="firebase.cabsy.Payment.PaymentActivity"
             android:label="@string/title_activity_payment"></activity>
 
         <meta-data
@@ -28,7 +28,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Home.HomeActivity">
+        <activity android:name="firebase.cabsy.Home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,31 +40,31 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
 
-        <activity android:name=".Account.AccountActivity" />
-        <activity android:name=".Login.LoginActivity" />
-        <activity android:name=".Login.RegisterActivity" />
-        <activity android:name=".Rides.RidesActivity" />
-        <activity android:name=".Home.OfferRideFragment" />
-        <activity android:name=".Home.SearchRideActivity" />
-        <activity android:name=".Reminder.ReminderActivity" />
-        <activity android:name=".Pickup.PickupActivity" />
-        <activity android:name=".Home.EditRideActivity" />
-        <activity android:name=".Pickup.PickupLocationActivity" />
-        <activity android:name=".Leaderboard.LeaderboardActivity" />
-        <activity android:name=".Home.SearchResultsActivity" />
-        <activity android:name=".Booked.BookedActivity" />
-        <activity android:name=".Account.HelpFragment" />
-        <activity android:name=".Account.ProfileActivity" />
+        <activity android:name="firebase.cabsy.Account.AccountActivity" />
+        <activity android:name="firebase.cabsy.Login.LoginActivity" />
+        <activity android:name="firebase.cabsy.Login.RegisterActivity" />
+        <activity android:name="firebase.cabsy.Rides.RidesActivity" />
+        <activity android:name="firebase.cabsy.Home.OfferRideFragment" />
+        <activity android:name="firebase.cabsy.Home.SearchRideActivity" />
+        <activity android:name="firebase.cabsy.Reminder.ReminderActivity" />
+        <activity android:name="firebase.cabsy.Pickup.PickupActivity" />
+        <activity android:name="firebase.cabsy.Home.EditRideActivity" />
+        <activity android:name="firebase.cabsy.Pickup.PickupLocationActivity" />
+        <activity android:name="firebase.cabsy.Leaderboard.LeaderboardActivity" />
+        <activity android:name="firebase.cabsy.Home.SearchResultsActivity" />
+        <activity android:name="firebase.cabsy.Booked.BookedActivity" />
+        <activity android:name="firebase.cabsy.Account.HelpFragment" />
+        <activity android:name="firebase.cabsy.Account.ProfileActivity" />
         <activity
-            android:name=".Settings.SettingsActivity"
+            android:name="firebase.cabsy.Settings.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".Settings.SettingsActivity"
+            android:parentActivityName="firebase.cabsy.Settings.SettingsActivity"
             android:theme="@style/Pref">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="firebase.gopool.Settings.SettingsActivity" />
+                android:value="firebase.cabsy.Settings.SettingsActivity" />
         </activity>
-        <activity android:name=".Service.CustomerActivity" />
+        <activity android:name="firebase.cabsy.Service.CustomerActivity" />
         <activity
             android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
             android:launchMode="singleTask">
@@ -78,12 +78,12 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".Service.MyFirebaseIdService">
+        <service android:name="firebase.cabsy.Service.MyFirebaseIdService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".Service.MyFirebaseMessaging">
+        <service android:name="firebase.cabsy.Service.MyFirebaseMessaging">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
