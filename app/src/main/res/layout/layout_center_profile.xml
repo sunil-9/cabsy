@@ -76,7 +76,7 @@
                     android:textColor="@color/darkgrey"
                     android:textStyle="bold"
                     android:textSize="17dp"
-                    android:text="Work and education"/>
+                    android:text="Personal Details"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"

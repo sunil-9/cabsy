@@ -13,16 +13,16 @@
 
         <ImageView
             android:scaleType="fitXY"
-            android:src="@drawable/signup_background"
+            android:src="@drawable/background1"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
         <ImageView
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="40dp"
             android:layout_width="match_parent"
-            app:srcCompat="@drawable/logo_main"
+            app:srcCompat="@drawable/cabsyintro"
             android:id="@+id/logoImageView"
-            android:layout_height="90dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
@@ -31,21 +31,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="250dp"
-            android:text="WELCOME TO GOPOOL"
+            android:layout_marginTop="40dp"
+            android:text="WELCOME TO CABSY"
             android:fontFamily="@font/main"
-            android:textColor="@color/white"
-            android:textSize="16dp" />
+            android:textColor="@color/light_black"
+            android:textSize="32dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="278dp"
-            android:text="Carpooling made easy"
+            android:layout_marginTop="10dp"
+            android:text="Need a Taxi, Go for Cabsy"
             android:fontFamily="@font/madeleina"
-            android:textColor="@color/white"
-            android:textSize="16dp" />
+            android:textColor="@color/light_black"
+            android:layout_below="@+id/logoImageView"
+            android:textSize="36dp" />
+
+
 
         <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -67,7 +70,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="GET CONNECTED WITH GOPOOL"
+                    android:text="GET CONNECTED WITH CABSY"
                     android:layout_marginLeft="20dp"
                     android:fontFamily="@font/main"
                     android:textColor="@color/darkgrey"
@@ -155,44 +158,18 @@
                         android:id="@+id/btn_signup"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Or sign up with other"
+                        android:text="Create Cabsy Account"
                         android:gravity="center_vertical"
                         android:paddingLeft="30dp"
                         android:background="@android:color/transparent"
                         android:textColor="@color/font"
-                        android:textSize="12dp" />
+                        android:textSize="16dp" />
 
                 </RelativeLayout>
             </RelativeLayout>
         </android.support.v7.widget.CardView>
 
 
-        <android.support.v7.widget.CardView
-            xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_view_loading"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="5dp"
-            android:layout_width="200dp"
-            android:layout_height="220dp"
-            card_view:cardCornerRadius="13dp">
-            <ProgressBar
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:indeterminateTint="@color/link_blue"
-                android:id="@+id/loginRequestProgressBar"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/loadingPleaseWait"
-                android:textColor="@color/black"
-                android:text="Loading..."
-                android:textAlignment="center"
-                android:layout_gravity="bottom"
-                android:layout_centerHorizontal="true"
-                android:textSize="15sp"
-                android:layout_marginBottom="7dp"/>
-        </android.support.v7.widget.CardView>
 
     </RelativeLayout>
 </merge>
