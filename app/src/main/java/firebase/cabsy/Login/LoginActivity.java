@@ -56,9 +56,9 @@ public class LoginActivity extends AppCompatActivity {
 
 
         mAuth = FirebaseAuth.getInstance();
-        mProgressBar = (ProgressBar) findViewById(R.id.loginRequestProgressBar);
-        mPleaseWait = (TextView) findViewById(R.id.loadingPleaseWait);
-        mLoadingCardView = (CardView) findViewById(R.id.card_view_loading);
+//        mProgressBar = (ProgressBar) findViewById(R.id.loginRequestProgressBar);
+//        mPleaseWait = (TextView) findViewById(R.id.loadingPleaseWait);
+//        mLoadingCardView = (CardView) findViewById(R.id.card_view_loading);
         mEmail = (EditText) findViewById(R.id.emailEditText);
         mPassword = (EditText) findViewById(R.id.passwordEditText);
         mBtn_signup = (TextView) findViewById(R.id.btn_signup);
