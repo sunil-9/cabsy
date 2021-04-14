@@ -35,10 +35,10 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mAuthListener;
 
     private Context mContext;
-    private ProgressBar mProgressBar;
-    private CardView mLoadingCardView;
+//    private ProgressBar mProgressBar;
+//    private CardView mLoadingCardView;
     private EditText mEmail, mPassword;
-    private TextView mPleaseWait, mBtn_signup;
+    private TextView  mBtn_signup;
     private String append = "";
     private String username;
     private String email;
@@ -64,9 +64,9 @@ public class LoginActivity extends AppCompatActivity {
         mBtn_signup = (TextView) findViewById(R.id.btn_signup);
 
 
-        mProgressBar.setVisibility(GONE);
-        mLoadingCardView.setVisibility(GONE);
-        mPleaseWait.setVisibility(GONE);
+//        mProgressBar.setVisibility(GONE);
+//        mLoadingCardView.setVisibility(GONE);
+//        mPleaseWait.setVisibility(GONE);
 
         init();
     }
@@ -139,9 +139,9 @@ public class LoginActivity extends AppCompatActivity {
      * @param password
      */
     private void signIn(String email, String password) {
-        mProgressBar.setVisibility(View.VISIBLE);
-        mPleaseWait.setVisibility(View.VISIBLE);
-        mLoadingCardView.setVisibility(View.VISIBLE);
+//        mProgressBar.setVisibility(View.VISIBLE);
+//        mPleaseWait.setVisibility(View.VISIBLE);
+//        mLoadingCardView.setVisibility(View.VISIBLE);
 
 
         mAuth.signInWithEmailAndPassword(email, password)
@@ -169,9 +169,9 @@ public class LoginActivity extends AppCompatActivity {
                                     Toast.LENGTH_SHORT).show();
                             updateUI(null);
 
-                            mProgressBar.setVisibility(GONE);
-                            mPleaseWait.setVisibility(GONE);
-                            mLoadingCardView.setVisibility(GONE);
+//                            mProgressBar.setVisibility(GONE);
+//                            mPleaseWait.setVisibility(GONE);
+//                            mLoadingCardView.setVisibility(GONE);
 
                         }
                     }
