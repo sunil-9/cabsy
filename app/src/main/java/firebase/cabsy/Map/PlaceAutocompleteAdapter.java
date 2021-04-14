@@ -228,7 +228,7 @@ public class PlaceAutocompleteAdapter
             // If the query did not complete successfully return null
             Toast.makeText(getContext(), "Error contacting API: " + e.toString(),
                     Toast.LENGTH_SHORT).show();
-            Log.e(TAG, "Error getting autocomplete prediction API call", e);
+            Log.e(TAG, "Error getting autocomplete prediction API call"+ e.toString());
             return null;
         }
     }
