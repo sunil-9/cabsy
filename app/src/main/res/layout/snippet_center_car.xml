@@ -46,7 +46,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Car"
+                    android:hint="Taxi Model"
                     android:id="@+id/usernameEditText"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="40dp"
@@ -118,13 +118,13 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/ic_luggage_icon"
+                    android:src="@drawable/ic_baseline_library_music_24"
                     android:layout_centerVertical="true"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Max luggage"
+                    android:hint="Music"
                     android:id="@+id/dobEditText"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="40dp"
@@ -137,7 +137,7 @@
                 android:layout_width="380dp"
                 android:layout_height="50dp"
                 android:layout_below="@id/relLayout4"
-                android:text="Update car details"
+                android:text="Update taxi details"
                 android:textColor="@color/white"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/darkgrey"/>

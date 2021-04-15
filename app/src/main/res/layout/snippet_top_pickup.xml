@@ -22,7 +22,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/backArrow"
-                    android:text="Carpool Journey"
+                    android:text="Cabsy Ride"
                     android:textSize="20sp"
                     android:layout_centerHorizontal="true"
                     android:textColor="@color/white" />

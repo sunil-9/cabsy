@@ -43,7 +43,7 @@
                         android:layout_marginRight="32dp"
                         android:id="@+id/message"
                         android:gravity="center"
-                        android:text="Welcome to Gopool, get started viewing the help guide." />
+                        android:text="Welcome to Cabsy, get started viewing the help guide." />
 
                     <Button
                         android:layout_width="match_parent"

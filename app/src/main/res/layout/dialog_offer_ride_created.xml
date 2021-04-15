@@ -43,7 +43,7 @@
                         android:layout_marginRight="32dp"
                         android:id="@+id/message"
                         android:gravity="center"
-                        android:text="You have successfully created a carpool ride." />
+                        android:text="You have successfully created a Cabsy ride." />
 
                     <Button
                         android:layout_width="match_parent"

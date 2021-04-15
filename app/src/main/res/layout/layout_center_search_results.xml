@@ -25,7 +25,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:id="@+id/notFoundIcon"
-            android:src="@drawable/ic_poo"/>
+            android:src="@drawable/ic_no_booked"/>
 
         <TextView
             android:layout_width="match_parent"

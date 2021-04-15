@@ -45,7 +45,7 @@
                     android:layout_marginTop="9dp"
                     android:textStyle="bold"
                     android:id="@+id/fromTxt"
-                    android:text="From: Leicester, UK" />
+                    android:text="From: Newroad, Pokhara" />
 
                 <TextView
                 android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                 android:layout_marginTop="5dp"
                 android:textStyle="bold"
                 android:id="@+id/toTxt"
-                android:text="To: London, UK" />
+                android:text="To: Chauthe, Pokhara" />
 
 
 
@@ -84,12 +84,13 @@
                     android:gravity="end"
                     android:textStyle="bold"
                     android:id="@+id/priceTxt"
-                    android:text="£ 6.00" />
+                    android:text="Rs.600" />
 
                 <RatingBar
                     android:id="@+id/individualRatingBar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     android:rating="0"
                     style="@style/customRatingBar"
                     android:progressTint="@color/ratingScale"

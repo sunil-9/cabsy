@@ -24,7 +24,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/profile_photo"
-                android:src="@drawable/dr_expresso"
+                android:src="@drawable/car_image"
                 android:layout_centerInParent="true"/>
 
 
@@ -40,7 +40,7 @@
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="23dp"
-                android:text="John Doe" />
+                android:text="" />
 
             <RatingBar
                 android:id="@+id/ratingBar"
@@ -101,7 +101,7 @@
                         android:layout_marginTop="6dp"
                         android:textColor="@color/darkgrey"
                         android:textSize="13dp"
-                        android:text="Tesco Express"/>
+                        android:text="Newroad"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -127,7 +127,7 @@
                         android:layout_marginTop="6dp"
                         android:textColor="@color/darkgrey"
                         android:textSize="13dp"
-                        android:text="De montfort Universty"/>
+                        android:text="9878999876"/>
 
                 </LinearLayout>
 
@@ -152,7 +152,7 @@
                     android:layout_marginTop="5dp"
                     android:id="@+id/personaBioText"
                     android:layout_below="@id/personalBio"
-                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been..."/>
+                    android:text="I love travelling."/>
 
                 <TextView
                     android:layout_width="wrap_content"

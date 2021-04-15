@@ -50,7 +50,7 @@
                         android:textSize="15sp"
                         android:textColor="@color/black"
                         android:id="@+id/carEditText"
-                        android:text="Car name"
+                        android:text="Taxi name"
                         android:layout_below="@id/usernameTxt"
                         android:layout_marginLeft="80dp"
                         android:layout_marginTop="3dp" />
@@ -92,14 +92,14 @@
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
                         android:id="@+id/costHeadingTxt"
-                        android:text="Cost (£)" />
+                        android:text="Cost (Rs.)" />
 
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
                         android:id="@+id/costEditText"
-                        android:hint="£££"
+                        android:hint="NPR"
                         android:inputType="number"
                         android:textColor="@color/black"
                         android:background="@android:color/transparent"
@@ -281,6 +281,7 @@
                     android:id="@+id/timeLayout"
                     android:background="@drawable/white_border_bottom"
                     android:padding="10dp"
+                    android:visibility="gone"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="5dp">

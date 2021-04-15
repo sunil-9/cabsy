@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:text="Offer a ride"
+                    android:text="Taxi Owners"
                     android:textSize="18sp"
                     android:gravity="center"
                     android:textColor="@color/white" />

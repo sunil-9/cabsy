@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Do you own a vehicle?"
+            android:text="Do you own a taxi?"
             android:layout_below="@id/uploadCarPicture"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="15dp"
@@ -120,7 +120,7 @@
                 android:textSize="16sp"
                 android:fontFamily="sans-serif"
                 android:id="@+id/carEditText"
-                android:hint="Car" />
+                android:hint="Taxi" />
         </android.support.design.widget.TextInputLayout>
 
 
@@ -180,7 +180,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@id/seatsLayout"
-            android:text="UPDATE CAR DETAILS"
+            android:text="UPDATE TAXI DETAILS"
             android:textColor="@color/white"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="25dp"

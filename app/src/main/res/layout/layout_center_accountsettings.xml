@@ -262,7 +262,7 @@
                             android:layout_height="50dp"
                             android:layout_marginLeft="20dp"
                             android:background="@android:color/transparent"
-                            android:text="Update car details"
+                            android:text="Update taxi details"
                             android:textSize="12dp"
                             android:textAlignment="textStart"
                             android:textColor="@color/darkgrey"/>

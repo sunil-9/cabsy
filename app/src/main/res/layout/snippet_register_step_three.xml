@@ -136,6 +136,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
+                        android:visibility="gone"
                         android:layout_marginTop="10dp"
                         android:background="@android:color/transparent"
                         android:inputType="textPersonName"
@@ -173,7 +174,7 @@
                         android:textSize="16sp"
                         android:fontFamily="sans-serif"
                         android:id="@+id/bioEditTextStepThree"
-                        android:hint="Tell us abit about yourself" />
+                        android:hint="Tell us about about yourself" />
                 </android.support.design.widget.TextInputLayout>
 
 
