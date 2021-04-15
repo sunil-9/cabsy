@@ -48,7 +48,7 @@ public class RegisterActivity  extends AppCompatActivity implements RegisterStep
 
     private String append = "";
     private String username, password, email, fullName, dob, gender, profile_photo, licence_number, registration_plate, car, car_photo, education, work, bio;
-    private Long mobileNumber;
+    private Long mobileNumber = Long.valueOf(0);
     private int seats;
     private Boolean carOwner;
 
@@ -212,15 +212,11 @@ public class RegisterActivity  extends AppCompatActivity implements RegisterStep
                         Log.d(TAG, "onDataChange: username already exists. Appending random string to name: " + append);
                     }
                 }
-
                 String mUsername = "";
                 mUsername = username + append;
-
                 //add new user to the database
                 mFirebaseMethods.addNewUser(email, fullName, mUsername, profile_photo, mobileNumber, dob, licence_number, car, registration_plate, seats, education, work, bio, carOwner, gender, car_photo);
-
                 Toast.makeText(mContext, "Signup successful. You may login now!.", Toast.LENGTH_SHORT).show();
-
                 mAuth.signOut();
             }
 
