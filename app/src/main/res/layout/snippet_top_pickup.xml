@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/white_grey_border_bottom"
-        android:backgroundTint="#40CF7F">
+        android:backgroundTint="#ad00a5">
 
         <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
