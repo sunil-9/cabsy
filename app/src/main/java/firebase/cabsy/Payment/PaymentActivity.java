@@ -264,6 +264,7 @@ public class PaymentActivity extends AppCompatActivity {
         protected void onPostExecute(Object o) {
             super.onPostExecute(o);
 
+
             mDialog.dismiss();
         }
     }
