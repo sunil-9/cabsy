@@ -525,15 +525,19 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
     private void geoDecoder(Location latLng) {
         Geocoder geocoder;
         List<Address> addresses = null;
+        String address = "";
         geocoder = new Geocoder(this, Locale.getDefault());
 
         try {
             addresses = geocoder.getFromLocation(latLng.getLatitude(), latLng.getLongitude(), 1);
+            address = addresses.get(0).getAddressLine(0);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        if(address.equals(""))
+            address="pokhara";
 
-        String address = addresses.get(0).getAddressLine(0);
+
         destinationTextview.setText(address);
         destinationTextview.dismissDropDown();
     }

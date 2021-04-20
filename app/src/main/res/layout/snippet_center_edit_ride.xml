@@ -154,9 +154,7 @@
                         android:textSize="16sp"
                         android:id="@+id/pickupLocationEditText"
                         android:background="@android:color/transparent"
-                        android:focusedByDefault="false"
                         android:hint="Tap for location"
-                        android:focusable="false"
                         android:textColor="@color/black"
                         android:layout_marginTop="20dp" />
                 </RelativeLayout>

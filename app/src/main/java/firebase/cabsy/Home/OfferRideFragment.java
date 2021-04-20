@@ -1,5 +1,6 @@
 package firebase.cabsy.Home;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
@@ -128,16 +129,7 @@ public class OfferRideFragment extends AppCompatActivity {
         });
 
         mSameGender = (MaterialAnimatedSwitch) findViewById(R.id.genderSwitch);
-//        mSameGender.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//                if(isChecked){
-//                    sameGenderBoolean = true;
-//                } else {
-//                    sameGenderBoolean = false;
-//                }
-//            }
-//        });
+
 
        mPickupEditText = (EditText) findViewById(R.id.pickupEditText);
         mPickupEditText.setOnClickListener(new View.OnClickListener() {
@@ -168,20 +160,6 @@ public class OfferRideFragment extends AppCompatActivity {
             }
         });
 
-        mPickupLocationEditText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(mContext, PickupLocationActivity.class);
-
-                Bundle b = new Bundle();
-
-                b.putParcelable("LatLng", currentLocation);
-
-                intent.putExtras(b);
-
-                startActivityForResult(intent, 1);
-            }
-        });
 
 
         mSnippetOfferRideButton = (Button) findViewById(R.id.snippetOfferRideButton);
@@ -192,7 +170,7 @@ public class OfferRideFragment extends AppCompatActivity {
                 String dateOfJourney = mDateOfJourneyEditText.getText().toString();
                 int extraTime = Integer.parseInt(mExtraTimeEditText.getText().toString());
                 int seatsAvailable = seatsID;
-                int luggageAllowance = Integer.parseInt(mLuggageEditText.getText().toString());
+                int luggageAllowance = 50;
 
                 String licencePlate = mLicencePlateEditText.getText().toString();
                 String pickupLocation = mPickupLocationEditText.getText().toString();
@@ -217,9 +195,11 @@ public class OfferRideFragment extends AppCompatActivity {
                     mFirebaseMethods.addPoints(userID, 100);
 
                     //Shows the ride has been created successfully
-                    OfferRideCreatedDialog dialog = new OfferRideCreatedDialog(mContext);
-                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                    dialog.show();
+                    AlertDialog alert = new AlertDialog.Builder(mContext).create();
+                    alert.setTitle("Congrats");
+                    alert.setMessage("ride is successfull");
+                    alert.setCancelMessage(null);
+                    alert.show();
 
                     finish();
 
@@ -273,7 +253,7 @@ public class OfferRideFragment extends AppCompatActivity {
                 destinationId = getIntent().getStringExtra("LOCATION");
                 Bundle b = getIntent().getExtras();
                 currentLocation = b.getParcelable("LatLng");
-                Log.i(TAG, "getActivityData: " + currentLocation.toString());
+//                Log.i(TAG, "getActivityData: " + currentLocation.toString());
 //            } else {
 //
 //                //from ViewRideCreatedDialog passed to this class

@@ -109,6 +109,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: navigating to fragment 0");
+                FirebaseUser user1 = FirebaseAuth.getInstance().getCurrentUser();
+                FirebaseAuth mauth;
+                mauth =FirebaseAuth.getInstance();
+                String u_id =mauth.getUid();
+                if (u_id != null) {
+                    mauth.signOut();
+                } else {
+                }
                Intent intent = new Intent(mContext, RegisterActivity.class);
                startActivity(intent);
             }
@@ -204,6 +212,8 @@ public class LoginActivity extends AppCompatActivity {
                 if (user != null) {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+                    startActivity(new Intent(LoginActivity.this,HomeActivity.class));
+
                 } else {
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");

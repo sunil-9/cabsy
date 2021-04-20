@@ -133,8 +133,8 @@ public class PickupLocationActivity extends AppCompatActivity implements OnMapRe
         Bitmap b=bitmapdraw.getBitmap();
         Bitmap smallMarker = Bitmap.createScaledBitmap(b, width, height, false);
 
-        mMap.addMarker(new MarkerOptions().position(currentLocation).title("Pickup location").draggable(true).icon(BitmapDescriptorFactory.fromBitmap(smallMarker)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 18));
+//        mMap.addMarker(new MarkerOptions().position(currentLocation).title("Pickup location").draggable(true).icon(BitmapDescriptorFactory.fromBitmap(smallMarker)));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 18));
 
         builder = new LatLngBounds.Builder();
         builder.include(currentLocation);
