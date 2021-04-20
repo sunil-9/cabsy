@@ -134,7 +134,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
     private FirebaseDatabase mFirebaseDatabse;
     private DatabaseReference mRef;
 
-    private Boolean carOwner;
+    private Boolean carOwner =false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -807,20 +807,25 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     public void getUserInformation(String uid) {
-        mRef.child("user").child(uid).child("carOwner").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                carOwner = dataSnapshot.getValue(Boolean.class);
-                if (carOwner == false) {
-                    offerButton.setEnabled(false);
-                    offerButton.setAlpha(.5f);
-                    offerButton.setClickable(false);
+        try{
+            mRef.child("user").child(uid).child("carOwner").addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    carOwner = dataSnapshot.getValue(Boolean.class);
+                    if (carOwner == false) {
+                        offerButton.setEnabled(false);
+                        offerButton.setAlpha(.5f);
+                        offerButton.setClickable(false);
+                    }
                 }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-            }
-        });
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                }
+            });
+        }catch (Exception e){
+            Log.d(TAG, "getUserInformation: "+e.getLocalizedMessage());
+        }
+
     }
 }
