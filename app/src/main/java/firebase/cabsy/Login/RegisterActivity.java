@@ -171,7 +171,6 @@ public class RegisterActivity  extends AppCompatActivity implements RegisterStep
         this.profile_photo = mRegisterStepThreeFragment.getRegistrationPicture();
         this.education = mRegisterStepThreeFragment.getEducation();
         this.work = mRegisterStepThreeFragment.getWork();
-        this.bio = mRegisterStepThreeFragment.getBio();
 
         //Fragment 4 car data (car info for firebase)
         this.licence_number = mRegisterStepFourFragment.getLicence();

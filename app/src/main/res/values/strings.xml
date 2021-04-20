@@ -31,13 +31,9 @@
     <string name="confirm_password_dialog">Confirm Password Dialog</string>
     <string name="welcome_password_dialog">Welcome Dialog</string>
 
-    <!-- Braintree API keys -->
-    <!-- todo:update api -->
-    <string name="API_GET_TOKEN">SEE TUTORIAL</string>
-    <string name="API_CHECK_OUT">SEE TUTORIAL</string>
 
     <!-- Google maps API key -->
-    <string name="google_maps_api_key">AIzaSyAXqLTaJM4yv0euxsaADgyvP9t4apWV6_Q</string>
+    <string name="google_maps_api_key">AIzaSyA_OWTk4vNLUtoIXYHmNt60OP5MDTjRgyc</string>
     <string name="title_activity_settings">Settings</string>
 
     <!-- Strings related to Settings -->

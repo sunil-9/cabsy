@@ -52,7 +52,7 @@ public class RegisterStepThreeFragment extends Fragment {
     private ImageView mbackButton3, mRegistrationPicture, mRestartRegistration;
     private RadioGroup mGenderGroup;
     private RadioButton maleRadioButton, femaleRadioButton;
-    private EditText mFullname, mMobileNumber, mDob, mWork, mEducation, mBio;
+    private EditText mFullname, mMobileNumber, mDob, mWork, mEducation;
     private String gender, imgURL;
     private Calendar mCalandar;
     private DatePickerDialog.OnDateSetListener date;
@@ -104,7 +104,6 @@ public class RegisterStepThreeFragment extends Fragment {
         mRegistrationPicture= (ImageView) mView.findViewById(R.id.registrationPicture);
         mWork = (EditText) mView.findViewById(R.id.workEditTextStepThree);
         mEducation = (EditText) mView.findViewById(R.id.educationEditTextStepThree);
-        mBio = (EditText) mView.findViewById(R.id.bioEditTextStepThree);
 
         mCalandar = Calendar.getInstance();
         date = new DatePickerDialog.OnDateSetListener() {
@@ -121,15 +120,22 @@ public class RegisterStepThreeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(maleRadioButton.isChecked() || femaleRadioButton.isChecked()) {
-                    if (mDob.getText().length() > 0 && mFullname.getText().length() > 0 && mMobileNumber.getText().length() > 0 &&
-                            mWork.getText().length() > 0 && mEducation.getText().length() > 0 && mBio.getText().length() > 0 ){
+                    if (mDob.getText().length() > 0
+                            
+                           ){
                         if (mMobileNumber.getText().length() >= 7) {
                             mOnButtonClickListener.onButtonClicked(v);
                         } else {
                             Toast.makeText(mView.getContext(), "Invalid phone number", Toast.LENGTH_SHORT).show();
                         }
                     } else {
-                        Toast.makeText(mView.getContext(), "All fields must be filled in", Toast.LENGTH_SHORT).show();
+
+                        Toast.makeText(mView.getContext(), "All fields must be filled in.. "+mDob.getText().toString()
+                                +" "+ mFullname.getText().toString()
+                                +" "+ mMobileNumber.getText().toString()
+                                +" "+ mWork.getText().toString()
+                                +" "+ mEducation.getText().toString()
+                               , Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Toast.makeText(mView.getContext(), "Please select gender", Toast.LENGTH_SHORT).show();
@@ -286,9 +292,7 @@ public class RegisterStepThreeFragment extends Fragment {
         return mEducation.getText().toString().trim();
     }
 
-    public String getBio() {
-        return mBio.getText().toString().trim();
-    }
+
 
     /** --------------------------- Firebase ---------------------------- **/
     /***
