@@ -61,6 +61,8 @@ public class LoginActivity extends AppCompatActivity {
 //        mLoadingCardView = (CardView) findViewById(R.id.card_view_loading);
         mEmail = (EditText) findViewById(R.id.emailEditText);
         mPassword = (EditText) findViewById(R.id.passwordEditText);
+
+        
         mBtn_signup = (TextView) findViewById(R.id.btn_signup);
 
 
@@ -117,7 +119,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (u_id != null) {
                     mauth.signOut();
                 } else {
-                    
+
                 }
                Intent intent = new Intent(mContext, RegisterActivity.class);
                startActivity(intent);
