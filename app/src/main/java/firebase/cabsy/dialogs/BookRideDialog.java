@@ -4,17 +4,32 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import firebase.cabsy.Account.ProfileActivity;
 import firebase.cabsy.Payment.PaymentActivity;
 import firebase.cabsy.R;
 import firebase.cabsy.Utils.SectionsStatePageAdapter;
+import firebase.cabsy.models.FCMResponse;
+import firebase.cabsy.models.Notification;
+import firebase.cabsy.models.Sender;
+import firebase.cabsy.models.Token;
+import retrofit2.Call;
+import retrofit2.Callback;
 
 public class BookRideDialog extends Dialog implements
         View.OnClickListener  {
