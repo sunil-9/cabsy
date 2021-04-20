@@ -111,6 +111,7 @@ public class LoginActivity extends AppCompatActivity {
                 Log.d(TAG, "onClick: navigating to fragment 0");
                 FirebaseUser user1 = FirebaseAuth.getInstance().getCurrentUser();
                 FirebaseAuth mauth;
+                
                 mauth =FirebaseAuth.getInstance();
                 String u_id =mauth.getUid();
                 if (u_id != null) {
