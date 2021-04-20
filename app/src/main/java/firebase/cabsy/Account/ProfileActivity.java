@@ -120,7 +120,6 @@ public class ProfileActivity extends AppCompatActivity {
 
         mDisplayUsername.setText(user.getUsername());
         mRatingBar.setRating(user.getUserRating());
-        mPersonalBio.setText(user.getBio());
         mEducationTextview.setText(user.getEducation());
         mWorkTextview.setText(user.getWork());
     }
