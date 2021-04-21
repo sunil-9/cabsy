@@ -1,1 +1,1 @@
-git pull origin test
+git pull origin master

@@ -811,8 +811,8 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
             mRef.child("user").child(uid).child("carOwner").addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    carOwner = dataSnapshot.getValue(Boolean.class);
-                    if (carOwner == false) {
+                    carOwner = false;
+                    if (!carOwner) {
                         offerButton.setEnabled(false);
                         offerButton.setAlpha(.5f);
                         offerButton.setClickable(false);
