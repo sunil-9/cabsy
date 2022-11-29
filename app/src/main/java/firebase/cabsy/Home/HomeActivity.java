@@ -808,11 +808,18 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     public void getUserInformation(String uid) {
         try{
+            Toast.makeText(mContext, " id is "+uid, Toast.LENGTH_SHORT).show();
             mRef.child("user").child(uid).child("carOwner").addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+<<<<<<< HEAD
+                    carOwner = false;
+                    if (!carOwner) {
+=======
+
                     carOwner = dataSnapshot.getValue(Boolean.class);
                     if (carOwner == false) {
+>>>>>>> d5c542cfb109f1ebf0f7aab2219f6d701722232c
                         offerButton.setEnabled(false);
                         offerButton.setAlpha(.5f);
                         offerButton.setClickable(false);

@@ -21,12 +21,7 @@
             android:name="firebase.cabsy.Payment.PaymentActivity"
             android:label="@string/title_activity_payment"></activity>
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_api_key" />
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+
 
         <activity android:name="firebase.cabsy.Login.LoginActivity">
             <intent-filter>
@@ -88,6 +83,17 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+
+
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

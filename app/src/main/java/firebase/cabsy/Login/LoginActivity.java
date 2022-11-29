@@ -61,6 +61,8 @@ public class LoginActivity extends AppCompatActivity {
 //        mLoadingCardView = (CardView) findViewById(R.id.card_view_loading);
         mEmail = (EditText) findViewById(R.id.emailEditText);
         mPassword = (EditText) findViewById(R.id.passwordEditText);
+
+
         mBtn_signup = (TextView) findViewById(R.id.btn_signup);
 
 
@@ -111,11 +113,13 @@ public class LoginActivity extends AppCompatActivity {
                 Log.d(TAG, "onClick: navigating to fragment 0");
                 FirebaseUser user1 = FirebaseAuth.getInstance().getCurrentUser();
                 FirebaseAuth mauth;
+
                 mauth =FirebaseAuth.getInstance();
                 String u_id =mauth.getUid();
                 if (u_id != null) {
                     mauth.signOut();
                 } else {
+
                 }
                Intent intent = new Intent(mContext, RegisterActivity.class);
                startActivity(intent);
@@ -191,8 +195,8 @@ public class LoginActivity extends AppCompatActivity {
      */
     private void updateUI(FirebaseUser user) {
         if (user != null) {
-            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
-            startActivity(intent);
+//            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+//            startActivity(intent);
             finish();
         }
     }

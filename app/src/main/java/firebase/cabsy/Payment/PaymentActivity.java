@@ -53,6 +53,7 @@ import static firebase.cabsy.Common.ApplicationContext.getContext;
 
 public class PaymentActivity extends AppCompatActivity {
 
+
     private static final String TAG = "PaymentActivity";
     private static final int REQUEST_CODE = 1234;
 
@@ -115,6 +116,8 @@ public class PaymentActivity extends AppCompatActivity {
                 finish();
             }
         });
+        requestPickupHere();
+        Toast.makeText(mContext, "Book Request Successfull", Toast.LENGTH_SHORT).show();
     }
 
     private void submitPayment() {

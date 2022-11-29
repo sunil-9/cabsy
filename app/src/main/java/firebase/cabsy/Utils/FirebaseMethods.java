@@ -74,6 +74,7 @@ public class FirebaseMethods {
                         }
                     }
                 });
+
     }
 
 
@@ -157,9 +158,9 @@ public class FirebaseMethods {
      * @param username
      */
     public void addNewUser(String email, String full_name, String username, String profile_photo, long mobile_number, String dob, String licence_number,
-                           String car, String registration_plate, int seats, String education, String work, String bio ,Boolean carOwner, String gender, String car_photo){
+                           String car, String registration_plate, int seats, String education, String work ,Boolean carOwner, String gender, String car_photo){
 
-        User user = new User(userID ,email, full_name, username, profile_photo, mobile_number, dob, licence_number, 0, 0,  car, registration_plate, seats,education, work, bio, carOwner, gender, 50 ,car_photo);
+        User user = new User(userID ,email, full_name, username, profile_photo, mobile_number, dob, licence_number, 0, 0,  car, registration_plate, seats,education, work,  carOwner, gender, 50 ,car_photo);
 
         myRef.child("user")
                 .child(userID)
@@ -327,9 +328,6 @@ public class FirebaseMethods {
                             .getValue(User.class)
                             .getWork());
 
-                    user.setBio(ds.child(userID)
-                            .getValue(User.class)
-                            .getBio());
 
                 } catch (NullPointerException e){
                     Log.d(TAG, "getUserSettings: NullPointerException: " + e.getMessage());
@@ -426,9 +424,7 @@ public class FirebaseMethods {
                             .getValue(User.class)
                             .getWork());
 
-                    user.setBio(ds.child(user_id)
-                            .getValue(User.class)
-                            .getBio());
+
 
                 } catch (NullPointerException e){
                     Log.d(TAG, "getUserSettings: NullPointerException: " + e.getMessage());

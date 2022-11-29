@@ -15,7 +15,6 @@ public class User {
     private String car_photo;
     private String education;
     private String work;
-    private String bio;
     private Long mobile_number;
     private int completedRides;
     private int seats;
@@ -26,7 +25,7 @@ public class User {
     public User() { }
 
     public User(String user_id, String email, String full_name, String username, String profile_photo, Long mobile_number, String dob, String licence_number, int completedRides, int userRating,
-                String car, String registration_plate, int seats, String education, String work, String bio, Boolean carOwner, String gender, int points, String car_photo) {
+                String car, String registration_plate, int seats, String education, String work, Boolean carOwner, String gender, int points, String car_photo) {
         this.user_id = user_id;
         this.email = email;
         this.full_name = full_name;
@@ -46,7 +45,6 @@ public class User {
         this.education = education;
         this.work = work;
         this.points = points;
-        this.bio = bio;
     }
 
     public String getUser_id() {
@@ -202,14 +200,6 @@ public class User {
         this.work = work;
     }
 
-    public String getBio() {
-        return bio;
-    }
-
-    public void setBio(String bio) {
-        this.bio = bio;
-    }
-
     @Override
     public String toString() {
         return "User{" +
@@ -226,7 +216,6 @@ public class User {
                 ", car_photo='" + car_photo + '\'' +
                 ", education='" + education + '\'' +
                 ", work='" + work + '\'' +
-                ", bio='" + bio + '\'' +
                 ", mobile_number=" + mobile_number +
                 ", completedRides=" + completedRides +
                 ", seats=" + seats +
